@@ -51,7 +51,6 @@ poly-art-generator/
 ├── poly_art.py
 ├── input/
 ├── output/
-├── requirements.txt
 └── README.md
 
 
