@@ -8,16 +8,19 @@ import pygame
 import tkinter as tk
 import sys
 
-IMAGE_PATH = "1.jpg"
-AUDIO_PATH = "none"
 
-AUDIO_START_AT = 0
-AUDIO_PLAY_FOR = 0
-AUDIO_DELAY = 0
+## change the commented part according to the requirements ##
 
-MAX_WIDTH = 3500
-MAX_CORNERS = 8500
-QUALITY = 0.0000000000000005
+IMAGE_PATH = "image.jpg" # image path(in jpg or jpeg)
+AUDIO_PATH = "audio.mp3" # audio path(mp3)
+
+AUDIO_START_AT = 0 # audio starting time (seconds) 
+AUDIO_PLAY_FOR = 0 # audio plays for how long (seconds)
+AUDIO_DELAY = 0 # delay between drawing and audio playback (seconds) ----prefer 0.5 to 2 seconds
+
+MAX_WIDTH = 3500 # execution sscreen width
+MAX_CORNERS = 8500 # 3 corners = 1 trisangle 
+QUALITY = 0.0000000000000005 # extend of detailing
 MIN_DISTANCE = 3
 
 EDGE_THRESHOLD1 = 60
@@ -25,13 +28,17 @@ EDGE_THRESHOLD2 = 150
 EDGE_POINT_STEP = 5
 
 BG_COLOR = "black"
-PEN_SIZE = 0.7
-SPEED = 0
-TRACER_N = 17000
-MAX_VIEW_SIZE = 1200
+PEN_SIZE = 0.7 # border width of the triangles 
+SPEED = 0 # execution speed
+TRACER_N = 17000 # execution laps 
+MAX_VIEW_SIZE = 1200 # execution sscreen 
 
-DRAW_DELAY = 0.5
+DRAW_DELAY = 0.5 # delay between screen apperance and execution
 
+
+
+
+## the below code is the execution logic ##
 
 def setup_window():
     screen = t.Screen()
@@ -53,7 +60,7 @@ def force_front(root, screen_width, screen_height, win_w, win_h):
     root.geometry(f"{win_w}x{win_h}+{x}+{y}")
     root.update_idletasks()
 
-    if sys.platform == 'darwin':  # macOS
+    if sys.platform == 'darwin': # macOS
         os.system('''/usr/bin/osascript -e 'tell app "Finder" to set frontmost of process "Python" to true' ''')
     elif sys.platform == 'win32':  # Windows
         root.wm_attributes('-topmost', 1)
