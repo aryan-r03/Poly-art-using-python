@@ -45,14 +45,14 @@ A Python-based tool that converts any input image into **low-poly (polygonal) ar
 ---
 
 ## 📂 Project Structure
-
+```
 poly-art-generator/
 │
 ├── poly_art.py
 ├── input/
 ├── output/
 └── README.md
-
+```
 
 ---
 
