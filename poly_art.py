@@ -9,9 +9,9 @@ import tkinter as tk
 import sys
 
 
-## change the commented part according to the requirements ##
 
-IMAGE_PATH = "image.jpg" # image path(in jpg or jpeg)
+
+IMAGE_PATH = "image.jpg" # image path(jpg or jpeg)
 AUDIO_PATH = "audio.mp3" # audio path(mp3)
 
 AUDIO_START_AT = 0 # audio starting time (seconds) 
