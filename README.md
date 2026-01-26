@@ -43,7 +43,7 @@
         <br><sub>Strategic point distribution</sub>
       </td>
       <td align="center" width="20%">
-        <img src="https://cdn-icons-png.flaticon.com/512/3022/3022411.png" width="60" height="60" alt="Step 3"/>
+        <img src="https://img.icons8.com/pulsar-gradient/96/mesh.png" width="60" height="60" alt="Step 3"/>
         <br><b>Triangulation</b>
         <br><sub>Delaunay mesh generation</sub>
       </td>
@@ -53,7 +53,7 @@
         <br><sub>Average color per triangle</sub>
       </td>
       <td align="center" width="20%">
-        <img src="https://cdn-icons-png.flaticon.com/512/3342/3342137.png" width="60" height="60" alt="Step 5"/>
+        <img src="https://img.icons8.com/plasticine/100/final-cut-pro-x.png" width="60" height="60" alt="Step 5"/>
         <br><b>Rendering</b>
         <br><sub>Generate final artwork</sub>
       </td>
